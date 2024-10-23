@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# Dashboard Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a dynamic and responsive dashboard designed to fetch and display data in a table format. The dashboard includes features such as sorting, filtering, searching, status color changes, dark mode, and responsive pagination.
 
-Currently, two official plugins are available:
+![alt text](https://github.com/medhatjachour/raqeeb-task-dashboard/blob/main/sample/1.png?raw=true)
+![alt text](https://github.com/medhatjachour/raqeeb-task-dashboard/blob/main/sample/2.png?raw=true)
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Data Fetching**: Automatically retrieves data from a specified API.
+- **Table Sorting**: Allows users to sort table columns.
+- **Filtering**: Enables filtering of data based on specified criteria.
+- **Searching**: Provides a search function to find specific entries.
+- **Status Color Changes**: Dynamically changes row colors based on the status.
+- **Dark Mode**: Toggle between light and dark themes.
+- **Responsive Pagination**: Ensures optimal viewing on various devices with pagination support.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/medhatjachour/raqeeb-task-dashboard.git
+    cd raqeeb-task-dashboard
+    ```
 
-- Configure the top-level `parserOptions` property like this:
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. Start the application:
+    ```bash
+    npm run dev
+    ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Data Fetching**: Configure the API endpoint in the `config.js` file.
+2. **Sorting**: Click on table headers to sort the data.
+3. **Filtering**: Use the filter options to narrow down the data.
+4. **Searching**: Enter keywords in the search bar to find specific entries.
+5. **Status Colors**: Rows will change color based on the status field.
+6. **Dark Mode**: Toggle the dark mode switch to change themes.
+7. **Pagination**: Navigate through data with the pagination controls.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Technologies Used
+
+- **React**: Frontend library for building user interfaces.
+- **Axios**: Promise-based HTTP client for the browser and Node.js.
+- **Styled-Components**: Utilized for styling and theming.
+- **TypeScript**: Enhanced JavaScript with static typing.
+
+
+## Contributing
+
+Contributions are welcome! If you’d like to contribute to this project, just contact me
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+[MIT](https://choosealicense.com/licenses/mit/)
