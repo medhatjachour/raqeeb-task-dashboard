@@ -2,8 +2,8 @@
 
 This project is a dynamic and responsive dashboard designed to fetch and display data in a table format. The dashboard includes features such as sorting, filtering, searching, status color changes, dark mode, and responsive pagination.
 
-![alt text](https://github.com/medhatjachour/raqeeb-task-dashboard/blob/main/sample/1.png?raw=true)
-![alt text](https://github.com/medhatjachour/raqeeb-task-dashboard/blob/main/sample/2.png?raw=true)
+![alt text](https://github.com/medhatjachour/raqeeb-task-dashboard/blob/main/samples/1.png?raw=true)
+![alt text](https://github.com/medhatjachour/raqeeb-task-dashboard/blob/main/samples/2.png?raw=true)
 ## Features
 
 - **Data Fetching**: Automatically retrieves data from a specified API.
